@@ -1,0 +1,11 @@
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

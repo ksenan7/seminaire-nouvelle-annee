@@ -1,0 +1,2691 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Séminaire « Nouvelle Année, Nouvelle Vie » | Setonwe Finances & KDIEX</title>
+  <meta name="description" content="Comment tracer vos 10 prochaines années. Même si aujourd'hui, vous ne savez plus où vous allez. Séminaire d'une journée à Cotonou le samedi 5 décembre 2026.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- FedaPay Checkout Script CDN officiel -->
+  <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
+
+  <style>
+    :root {
+      /* Palette SETONWE FINANCES */
+      --color-primary: #3B0A57;         /* Violet profond / aubergine */
+      --color-primary-dark: #260538;    /* Aubergine nuit */
+      --color-primary-light: #521377;   /* Aubergine royal */
+      --color-gold: #C9A227;            /* Or soutenu */
+      --color-gold-light: #E8C96A;      /* Or champagne clair */
+      --color-gold-dark: #A57E17;       /* Or bronze métallique */
+      --color-gold-gradient: linear-gradient(135deg, #E8C96A 0%, #C9A227 50%, #B8892B 100%);
+      --color-white: #FFFFFF;
+      --color-bg-light: #FAF8F5;        /* Ivoire doux */
+      --color-bg-card: #FFFFFF;
+      --color-text-dark: #1E1226;       /* Texte très sombre aubergine */
+      --color-text-muted: #5E5266;      /* Texte secondaire */
+      --color-border: #E8E1EE;
+      --shadow-sm: 0 4px 12px rgba(59, 10, 87, 0.06);
+      --shadow-md: 0 10px 30px rgba(59, 10, 87, 0.10);
+      --shadow-lg: 0 20px 50px rgba(59, 10, 87, 0.16);
+      --shadow-gold: 0 8px 25px rgba(201, 162, 39, 0.35);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--color-text-dark);
+      background-color: var(--color-bg-light);
+      line-height: 1.65;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-serif {
+      font-family: 'Cinzel', serif;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* TOP BANNER URGENCY */
+    .top-banner {
+      background: var(--color-primary-dark);
+      color: var(--color-white);
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 0.9rem;
+      border-bottom: 2px solid var(--color-gold);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .top-banner .badge-early {
+      background: var(--color-gold-gradient);
+      color: var(--color-primary-dark);
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* HEADER / NAVBAR */
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      padding: 16px 0;
+      position: relative;
+      z-index: 999;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .nav-logo img {
+      height: 48px;
+      width: auto;
+    }
+
+    .nav-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-meta .date-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #F2ECF7;
+      color: var(--color-primary);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .btn-nav {
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      border: 1px solid var(--color-gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-nav:hover {
+      background: var(--color-gold);
+      color: var(--color-primary-dark);
+      box-shadow: var(--shadow-gold);
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      background: radial-gradient(circle at 20% 20%, #4D1273 0%, var(--color-primary) 50%, var(--color-primary-dark) 100%);
+      color: var(--color-white);
+      padding: 70px 0 90px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201, 162, 39, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(232, 201, 106, 0.15);
+      border: 1px solid var(--color-gold);
+      color: var(--color-gold-light);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      color: var(--color-white);
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .hero-title span.gold-text {
+      background: var(--color-gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #E2D9EA;
+      margin-bottom: 32px;
+    }
+
+    .hero-lead strong {
+      color: var(--color-white);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .btn-gold-cta {
+      background: var(--color-gold-gradient);
+      color: var(--color-primary-dark);
+      padding: 18px 36px;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      text-align: center;
+      box-shadow: var(--shadow-gold);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-gold-cta:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 35px rgba(201, 162, 39, 0.5);
+    }
+
+    .hero-guarantee {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: #D3C4DF;
+    }
+
+    .hero-guarantee span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card-img {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+      border: 3px solid rgba(201, 162, 39, 0.4);
+      background: var(--color-primary-dark);
+    }
+
+    .hero-card-img img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+
+    .hero-float-badge {
+      position: absolute;
+      bottom: -15px;
+      left: -15px;
+      background: var(--color-white);
+      color: var(--color-primary);
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border-left: 5px solid var(--color-gold);
+      max-width: 260px;
+      z-index: 2;
+    }
+
+    .hero-float-badge .badge-title {
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: var(--color-primary);
+    }
+
+    .hero-float-badge .badge-sub {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    /* SECTION COMMONS */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 56px;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      color: var(--color-gold-dark);
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* SECTION PROBLEME : BRASSER LE VIDE */
+    .problem-section {
+      background: #FFFFFF;
+      position: relative;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .problem-visual {
+      position: relative;
+    }
+
+    .problem-img-wrapper {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+    }
+
+    .problem-img-wrapper img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+    }
+
+    .problem-quote {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      font-style: italic;
+      font-size: 0.9rem;
+      max-width: 280px;
+      border-right: 4px solid var(--color-gold);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pain-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .pain-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 20px;
+      background: #FAF7FC;
+      border-radius: var(--radius-md);
+      border-left: 4px solid #8D749B;
+      transition: var(--transition);
+    }
+
+    .pain-card:hover {
+      transform: translateX(6px);
+      border-left-color: var(--color-gold);
+      background: #FDFBF8;
+    }
+
+    .pain-card i {
+      color: #9C2A4B;
+      font-size: 1.2rem;
+      margin-top: 3px;
+    }
+
+    .pain-card p {
+      font-size: 0.98rem;
+      color: var(--color-text-dark);
+      margin: 0;
+    }
+
+    .pain-verdict {
+      margin-top: 28px;
+      padding: 18px 24px;
+      background: #FFF3D6;
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--color-gold);
+      font-size: 1.05rem;
+      color: #5C4300;
+      font-weight: 600;
+    }
+
+    /* SECTION COUT DE L'INACTION */
+    .inaction-section {
+      background: var(--color-primary-dark);
+      color: var(--color-white);
+      position: relative;
+    }
+
+    .inaction-box {
+      background: linear-gradient(135deg, rgba(82, 19, 119, 0.4) 0%, rgba(38, 5, 56, 0.8) 100%);
+      border: 1px solid rgba(201, 162, 39, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .inaction-box h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--color-gold-light);
+    }
+
+    .inaction-box p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #E7DEEE;
+      margin-bottom: 24px;
+    }
+
+    .inaction-box .clock-highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--color-white);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 12px 24px;
+      border-radius: 30px;
+      border: 1px solid var(--color-gold);
+      margin-top: 10px;
+    }
+
+    /* SECTION METHODE EN 2 BLOCS */
+    .method-section {
+      background: var(--color-bg-light);
+    }
+
+    .blocks-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 20px;
+    }
+
+    .block-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+      border-top: 6px solid var(--color-primary);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .block-card.gold-border {
+      border-top-color: var(--color-gold);
+    }
+
+    .block-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .block-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: #F2ECF7;
+      color: var(--color-primary);
+    }
+
+    .block-tag.gold {
+      background: #FFF8E6;
+      color: var(--color-gold-dark);
+    }
+
+    .block-time {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+    }
+
+    .block-card h3 {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+
+    .block-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .block-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--color-text-dark);
+    }
+
+    .block-features li i {
+      color: var(--color-gold-dark);
+      font-size: 1rem;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .block-visual-thumb {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: auto;
+      height: 180px;
+    }
+
+    .block-visual-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* SECTION GALLERIE TRANSFORMATION */
+    .gallery-preview {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      height: 200px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(38, 5, 56, 0.9) 0%, transparent 100%);
+      color: var(--color-white);
+      padding: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* SECTION TABLEAU COMPARATIF */
+    .compare-section {
+      background: #FFFFFF;
+    }
+
+    .compare-table-wrapper {
+      max-width: 950px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+    }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .compare-table th {
+      padding: 20px 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Cinzel', serif;
+    }
+
+    .compare-table th.col-dim {
+      background: #F5F2F8;
+      color: var(--color-primary);
+      width: 25%;
+    }
+
+    .compare-table th.col-before {
+      background: #ECE5F2;
+      color: #6C557E;
+      width: 37.5%;
+    }
+
+    .compare-table th.col-after {
+      background: var(--color-primary);
+      color: var(--color-gold-light);
+      width: 37.5%;
+    }
+
+    .compare-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.95rem;
+    }
+
+    .compare-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .compare-table td.cell-before {
+      background: #FAF7FC;
+      color: var(--color-text-muted);
+    }
+
+    .compare-table td.cell-after {
+      background: #FAF6E9;
+      color: var(--color-primary-dark);
+      font-weight: 600;
+    }
+
+    /* SECTION POUR QUI / PAS POUR QUI */
+    .fit-section {
+      background: var(--color-bg-light);
+    }
+
+    .fit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .fit-card {
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      background: var(--color-white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .fit-card.for-you {
+      border-top: 5px solid #2E7D32;
+    }
+
+    .fit-card.not-for-you {
+      border-top: 5px solid #C62828;
+    }
+
+    .fit-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .fit-card.for-you h3 {
+      color: #1B5E20;
+    }
+
+    .fit-card.not-for-you h3 {
+      color: #B71C1C;
+    }
+
+    .fit-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .fit-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .fit-list.for-you li i {
+      color: #2E7D32;
+      font-size: 1.1rem;
+      margin-top: 3px;
+    }
+
+    .fit-list.not-for-you li i {
+      color: #C62828;
+      font-size: 1.1rem;
+      margin-top: 3px;
+    }
+
+    /* SECTION ANIMATEURS */
+    .speakers-section {
+      background: #FFFFFF;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .speaker-card {
+      background: #FAF8FC;
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      border: 1px solid var(--color-border);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .speaker-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+      border-color: var(--color-gold);
+    }
+
+    .speaker-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* SPEAKER AVATARS */
+    .speaker-avatar-circle {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 3px solid var(--color-gold);
+      box-shadow: 0 6px 20px rgba(59, 10, 87, 0.2);
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .speaker-avatar-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* COUNTDOWN TIMERS */
+    .header-timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(201, 162, 39, 0.5);
+      font-family: 'Cinzel', serif;
+    }
+
+    .header-timer .timer-unit {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+    }
+
+    .header-timer .timer-val {
+      font-weight: 800;
+      color: var(--color-gold-light);
+      font-size: 0.95rem;
+    }
+
+    .header-timer .timer-lbl {
+      font-size: 0.7rem;
+      color: #D3C4DF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .header-timer .timer-sep {
+      color: var(--color-gold);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .footer-countdown-box {
+      margin: 32px auto 36px;
+      max-width: 560px;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1.5px solid var(--color-gold);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .footer-timer-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-gold-light);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-timer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .footer-timer-card {
+      background: linear-gradient(180deg, rgba(82, 19, 119, 0.7) 0%, rgba(38, 5, 56, 0.9) 100%);
+      border: 1px solid rgba(201, 162, 39, 0.4);
+      border-radius: var(--radius-md);
+      padding: 12px 6px;
+      text-align: center;
+    }
+
+    .footer-timer-card .timer-val {
+      display: block;
+      font-family: 'Cinzel', serif;
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--color-gold-light);
+      line-height: 1.1;
+    }
+
+    .footer-timer-card .timer-lbl {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #D3C4DF;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .speaker-title-group h3 {
+      font-size: 1.35rem;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .speaker-tagline {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-gold-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .speaker-creds {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: var(--color-text-dark);
+    }
+
+    .speaker-creds li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .speaker-creds li i {
+      color: var(--color-gold);
+      font-size: 0.95rem;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    /* SECTION KIT DU PARTICIPANT */
+    .kit-section {
+      background: radial-gradient(circle at 80% 20%, #4D1273 0%, var(--color-primary) 70%, var(--color-primary-dark) 100%);
+      color: var(--color-white);
+    }
+
+    .kit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .kit-visual {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      border: 2px solid rgba(201, 162, 39, 0.4);
+    }
+
+    .kit-visual img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .kit-content h2 {
+      font-size: 2.3rem;
+      color: var(--color-white);
+      margin-bottom: 20px;
+    }
+
+    .kit-content h2 span {
+      color: var(--color-gold-light);
+    }
+
+    .kit-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .kit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--color-gold);
+    }
+
+    .kit-item i {
+      font-size: 1.4rem;
+      color: var(--color-gold-light);
+      margin-top: 2px;
+    }
+
+    .kit-item h4 {
+      font-size: 1.05rem;
+      color: var(--color-white);
+      margin-bottom: 4px;
+    }
+
+    .kit-item p {
+      font-size: 0.88rem;
+      color: #D7CADE;
+      margin: 0;
+    }
+
+    /* SECTION TARIFICATION */
+    .pricing-section {
+      background: #FAF8F5;
+      position: relative;
+    }
+
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      max-width: 960px;
+      margin: 0 auto 40px;
+    }
+
+    .pricing-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 44px 36px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--color-border);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .pricing-card.featured {
+      border-color: var(--color-gold);
+      transform: scale(1.03);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-gold-gradient);
+      color: var(--color-primary-dark);
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 20px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      box-shadow: var(--shadow-gold);
+      white-space: nowrap;
+    }
+
+    .plan-name {
+      font-size: 1.6rem;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .plan-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .price-box {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px dashed var(--color-border);
+      border-bottom: 1px dashed var(--color-border);
+      margin-bottom: 24px;
+    }
+
+    .price-current {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      font-family: 'Cinzel', serif;
+      line-height: 1;
+    }
+
+    .price-current span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-gold-dark);
+    }
+
+    .price-saving {
+      display: inline-block;
+      margin-top: 8px;
+      background: #E8F5E9;
+      color: #2E7D32;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .price-future {
+      font-size: 0.85rem;
+      color: #8C8095;
+      margin-top: 8px;
+    }
+
+    .price-future del {
+      color: #B71C1C;
+    }
+
+    .plan-benefits {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+      flex-grow: 1;
+    }
+
+    .plan-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .plan-benefits li i {
+      color: var(--color-gold);
+      font-size: 1.1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .btn-pricing {
+      width: 100%;
+      padding: 16px 24px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: none;
+    }
+
+    .btn-pricing.btn-primary-purple {
+      background: var(--color-primary);
+      color: var(--color-white);
+    }
+
+    .btn-pricing.btn-primary-purple:hover {
+      background: var(--color-primary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-pricing.btn-gold {
+      background: var(--color-gold-gradient);
+      color: var(--color-primary-dark);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-pricing.btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(201, 162, 39, 0.45);
+    }
+
+    .pricing-security-bar {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .pricing-security-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* SECTION FAQ */
+    .faq-section {
+      background: #FFFFFF;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #FAF8FC;
+      transition: var(--transition);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--color-primary);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-question i {
+      color: var(--color-gold);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 0.96rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      display: none;
+    }
+
+    .faq-item.active {
+      border-color: var(--color-gold);
+      background: #FFFFFF;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    /* SECTION FOOTER CTA */
+    .footer-cta {
+      background: var(--color-primary-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .footer-cta h2 {
+      font-size: 2.5rem;
+      color: var(--color-gold-light);
+      margin-bottom: 20px;
+    }
+
+    .footer-cta p {
+      font-size: 1.2rem;
+      color: #E2D9EA;
+      max-width: 700px;
+      margin: 0 auto 36px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #190326;
+      color: #B8A9C6;
+      padding: 40px 0;
+      font-size: 0.88rem;
+      border-top: 1px solid rgba(201, 162, 39, 0.2);
+    }
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-brand img {
+      height: 36px;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #FFFFFF;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    /* MODAL DE PAIEMENT FEDAPAY */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(26, 3, 38, 0.75);
+      backdrop-filter: blur(6px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      padding: 16px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-box {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 520px;
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--color-gold);
+      position: relative;
+      animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes modalSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: #F2ECF7;
+      color: var(--color-primary);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      border: none;
+      transition: var(--transition);
+    }
+
+    .modal-close:hover {
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .modal-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .modal-header h3 {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      margin-bottom: 6px;
+    }
+
+    .modal-header p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    .plan-summary-pill {
+      background: #F5EFE0;
+      border: 1px solid var(--color-gold);
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--color-text-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(59, 10, 87, 0.12);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .btn-submit-pay {
+      width: 100%;
+      background: var(--color-gold-gradient);
+      color: var(--color-primary-dark);
+      padding: 16px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: var(--shadow-gold);
+      transition: var(--transition);
+      margin-top: 20px;
+    }
+
+    .btn-submit-pay:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(201, 162, 39, 0.5);
+    }
+
+    .modal-security-note {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 992px) {
+      .hero-grid, .problem-grid, .blocks-grid, .speakers-grid, .kit-grid, .pricing-cards, .fit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .pricing-card.featured {
+        transform: none;
+      }
+
+      .gallery-preview {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 1.85rem;
+      }
+
+      .hero-card-img img {
+        height: 340px;
+        object-position: center 20%;
+      }
+
+      .hero-float-badge {
+        position: static;
+        margin-top: 16px;
+        max-width: 100%;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .compare-table th, .compare-table td {
+        padding: 12px 14px;
+        font-size: 0.82rem;
+      }
+
+      .nav-meta .date-pill {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRE D'URGENCE SUPÉRIEURE AVEC MINUTEUR -->
+  <div class="top-banner">
+    <span class="badge-early" id="bannerBadge">Offre Spéciale</span>
+    <span id="bannerText">🔥 Tarif Early Bird en cours jusqu'au <strong>25 Novembre à 23h59</strong></span>
+
+    <!-- MINUTEUR HEADER -->
+    <div class="header-timer" id="headerTimer" title="Temps restant avant basculement de tarif">
+      <div class="timer-unit"><span class="timer-val" id="h-days">00</span><span class="timer-lbl">j</span></div>
+      <span class="timer-sep">:</span>
+      <div class="timer-unit"><span class="timer-val" id="h-hours">00</span><span class="timer-lbl">h</span></div>
+      <span class="timer-sep">:</span>
+      <div class="timer-unit"><span class="timer-val" id="h-mins">00</span><span class="timer-lbl">m</span></div>
+      <span class="timer-sep">:</span>
+      <div class="timer-unit"><span class="timer-val" id="h-secs">00</span><span class="timer-lbl">s</span></div>
+    </div>
+
+    <span>•</span>
+    <span><strong>50 places maximum</strong> (Aucune inscription sur place)</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <img src="images setonwe/logo SETONWE FINANCES.png" alt="Setonwe Finances Logo" onerror="this.style.display='none'">
+        <span style="font-family:'Cinzel',serif; font-weight:800; color:var(--color-primary); font-size:1.15rem; letter-spacing:0.02em;">SETONWE FINANCES</span>
+      </a>
+
+      <div class="nav-meta">
+        <div class="date-pill">
+          <i class="fa-regular fa-calendar-check" style="color:var(--color-gold);"></i>
+          Samedi 5 Décembre 2026 · Cotonou
+        </div>
+        <a href="#tarifs" class="btn-nav">
+          <i class="fa-solid fa-ticket"></i> Réserver ma place
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1 : HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <i class="fa-solid fa-crown" style="color:var(--color-gold-light);"></i> Séminaire Immersif Exclusif · 1 Journée de Transformation
+          </div>
+
+          <h1 class="hero-title">
+            Comment tracer vos <span class="gold-text">10 prochaines années</span>. Même si aujourd'hui, vous ne savez plus où vous allez.
+          </h1>
+
+          <p class="hero-lead">
+            <strong>Posez enfin le vacarme du quotidien.</strong> Clarifiez votre vision réelle, Identifiez ce qui vous retient, Désamorcez vos croyances limitantes et Fixez vos objectifs financiers chiffrés.
+            <br><br>
+            <strong>Le soir à 17h, vous rentrez avec un plan écrit pour 2027. Pas de simples résolutions oubliées en mars.</strong>
+          </p>
+
+          <div class="hero-actions">
+            <a href="#tarifs" class="btn-gold-cta" id="heroCtaBtn">
+              <i class="fa-solid fa-pen-fancy"></i> JE RÉSERVE MA PLACE (DÈS 35 000 FCFA)
+            </a>
+            <div class="hero-guarantee">
+              <span><i class="fa-solid fa-shield-halved" style="color:var(--color-gold-light);"></i> Paiement sécurisé FedaPay (Mobile Money & CB)</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-users"></i> Strictement limité à 50 participants</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-img">
+            <img src="images setonwe/Woman_sitting_by_window_recadree.jpg" alt="Femme sereine traçant son avenir au lever du jour à Cotonou">
+          </div>
+          <div class="hero-float-badge">
+            <div class="badge-title"><i class="fa-solid fa-compass" style="color:var(--color-gold);"></i> Cap 2027-2036</div>
+            <div class="badge-sub">Repartez avec votre boussole de vie et votre stratégie financière chiffrée.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 : LE DIAGNOSTIC SANS FARD -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="section-header">
+      
+        <h2 class="section-title">Vous reconnaissez-vous dans ce tableau ?</h2>
+        <p class="section-desc">Vous avez un travail, un toit, une famille. Tout ce qu'il faut pour vivre décemment selon les critères de la société. Et pourtant...</p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-visual">
+          <div class="problem-img-wrapper">
+            <img src="images setonwe/Man_sitting_on_sofa_staring_20261020185752.jpg" alt="Homme pensif assis dans son salon ressentant le vide intérieur">
+          </div>
+          <div class="problem-quote">
+            « On court toute la semaine, on gagne de l'argent, mais vers quelle destination réelle avance-t-on ? »
+          </div>
+        </div>
+
+        <div class="problem-content">
+          <div class="pain-cards">
+            <div class="pain-card">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p><strong>Les semaines se ressemblent mécaniquement :</strong> Vous avancez, vous éteignez les urgences du quotidien... mais vous n'avez pas de cap directeur.</p>
+            </div>
+            <div class="pain-card">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p><strong>Quand on vous demande où vous serez dans 5 ou 10 ans :</strong> Vous esquissez une réponse de façade, mais au fond, vous n'avez aucune clarté.</p>
+            </div>
+            <div class="pain-card">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p><strong>Votre argent entre... puis s'évapore :</strong> Vous travaillez dur, mais à la fin du mois, vous ne savez pas précisément ce qu'il a bâti pour votre liberté future.</p>
+            </div>
+            <div class="pain-card">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p><strong>Le piège des résolutions de janvier :</strong> Prises avec enthousiasme le 1er janvier, totalement oubliées et balayées par l'inertie dès le mois de mars.</p>
+            </div>
+          </div>
+
+          <div class="pain-verdict">
+            💡 <strong>Ce n'est pas un manque de volonté ni de discipline.</strong> C'est un manque de clarté et de système. C'est ce que nous appelons : <em>« Brasser le vide »</em>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 : CE QUE COÛTE UNE ANNÉE DE PLUS SANS CAP -->
+  <section class="inaction-section">
+    <div class="container">
+      <div class="inaction-box">
+        <h3>2027 commence dans quelques semaines.</h3>
+        <p>
+          Sans décision courageuse aujourd'hui, elle sera le calque parfait de 2026 : mêmes journées en pilote automatique, mêmes questions sans réponse, mêmes dépenses sans vision patrimoniale.
+          <br><br>
+          <strong>Combien d'années actives vous reste-t-il vraiment devant vous ? 10 ans ? 15 ans ? 20 ans au maximum ?</strong>
+          <br>
+          Chacune qui passe sans cap ne revient jamais. Le temps est votre seule ressource non renouvelable.
+        </p>
+
+        <div class="clock-highlight">
+          <i class="fa-regular fa-hourglass-half" style="color:var(--color-gold-light);"></i>
+          Combien d'années êtes-vous encore prêt à laisser passer sans boussole ?
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 : LA MÉTHODE EN 2 TEMPS (LE PROGRAMME) -->
+  <section class="method-section" id="programme">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Architecture du Séminaire</span>
+        <h2 class="section-title">Une méthode complète en deux temps</h2>
+        <p class="section-desc">
+          Le matin, vous travaillez en profondeur sur votre vie entière.  
+          L'après-midi, vous appliquez exactement la même rigueur à votre argent et à votre patrimoine.
+        </p>
+      </div>
+
+      <div class="blocks-grid">
+        <!-- BLOC 1 -->
+        <div class="block-card">
+          <div class="block-header">
+            <span class="block-tag">Matin · Fondations & Identité</span>
+            <span class="block-time"><i class="fa-regular fa-clock"></i> 08h00 - 12h30</span>
+          </div>
+          <h3>Bloc 1 : Vos Fondations Intérieures</h3>
+          <ul class="block-features">
+            <li>
+              <i class="fa-solid fa-chart-pie"></i>
+              <span><strong>La Roue de la Vie passée au crible :</strong> Évaluez vos 8 domaines de vie. En 30 minutes, vous voyez enfin où ça coince.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-eye"></i>
+              <span><strong>Visualisation guidée à 10 ans :</strong> Une projection sensorielle puissante pour voir en détail votre vie idéale en 2036.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-user-check"></i>
+              <span><strong>Clarification de votre Identité :</strong> Identifiez les rôles que vous jouez sans satisfaction et choisissez celui qui passe en premier.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-layer-group"></i>
+              <span><strong>Vos Valeurs non-négociables :</strong> Classées et triées. Vous ne douterez plus jamais face à un dilemme important.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-fire-burner"></i>
+              <span><strong>Désamorçage des Croyances Limitantes :</strong> Nommez la phrase qui vous retient depuis l'enfance et traitez-la sur place par la PNL.</span>
+            </li>
+          </ul>
+
+          <div class="block-visual-thumb">
+            <img src="images setonwe/Hands_filling_in_wheel_chart_20261020185743.jpg" alt="Atelier de travail sur la Roue de la Vie">
+          </div>
+        </div>
+
+        <!-- BLOC 2 -->
+        <div class="block-card gold-border">
+          <div class="block-header">
+            <span class="block-tag gold">Après-midi · Argent & Patrimoine</span>
+            <span class="block-time"><i class="fa-regular fa-clock"></i> 13h30 - 17h00</span>
+          </div>
+          <h3>Bloc 2 : Votre Stratégie Financière</h3>
+          <ul class="block-features">
+            <li>
+              <i class="fa-solid fa-bullseye"></i>
+              <span><strong>Vision financière 2036 :</strong> Où voulez-vous être dans 10 ans ? À 17h00, vous avez la réponse chiffrée par écrit.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span><strong>Identité face à l'argent :</strong> Qui êtes-vous aujourd'hui, qui voulez-vous devenir, et l'écart précis à combler.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-brain"></i>
+              <span><strong>Psychologie invisible de l'argent :</strong> Pourquoi vos croyances d'enfance décident encore de vos dépenses actuelles.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-calculator"></i>
+              <span><strong>Triangle ORA Finance :</strong> Convertir une grande vision à 10 ans en objectifs annuels, mensuels et hebdomadaires.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-coins"></i>
+              <span><strong>Investir et bâtir un patrimoine :</strong> Le plan d'ensemble clair pour démarrer sereinement, même sans expérience préalable.</span>
+            </li>
+          </ul>
+
+          <div class="block-visual-thumb">
+            <img src="images setonwe/Couple_planning_finances_together_20261020185321.jpg" alt="Couple planifiant ses finances avec clarté">
+          </div>
+        </div>
+      </div>
+
+      <!-- GALLERY 4 VISUALS -->
+      <div class="gallery-preview">
+        <div class="gallery-item">
+          <img src="images setonwe/adults_meditating_guided.jpg" alt="Méditation guidée et visualisation intérieure">
+          <div class="gallery-caption">Visualisation guidée & clarté</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images setonwe/Woman_sorting_cards_into_piles_20261020185535.jpg" alt="Triage tactile des valeurs personnelles">
+          <div class="gallery-caption">Hiérarchisation des valeurs</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images setonwe/Man_tearing_paper_20261020185330.jpg" alt="Déchirure symbolique d'une croyance limitante">
+          <div class="gallery-caption">Libération des croyances limitantes</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images setonwe/facilitator_leading_workshop.jpg" alt="Atelier en petit comité chaleureux">
+          <div class="gallery-caption">Échanges & intelligence collective</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 : LE TABLEAU COMPARATIF AVANT / APRÈS -->
+  <section class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">La Métamorphose</span>
+        <h2 class="section-title">Ce qui change après cette journée</h2>
+        <p class="section-desc">Regardez la différence nette entre continuer en pilote automatique et consacrer ce samedi du 5 décembre à votre vie.</p>
+      </div>
+
+      <div class="compare-table-wrapper">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="col-dim">Dimension</th>
+              <th class="col-before">Avant le séminaire</th>
+              <th class="col-after">Après le 5 décembre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Direction de vie</strong></td>
+              <td class="cell-before">Floue. On avance par habitude ou par obligation sociale.</td>
+              <td class="cell-after">✨ Une vision écrite et limpide à 10 ans.</td>
+            </tr>
+            <tr>
+              <td><strong>Prise de décision</strong></td>
+              <td class="cell-before">On hésite, on repousse, on subit l'opinion des autres.</td>
+              <td class="cell-after">✨ On tranche sereinement grâce à ses valeurs classées.</td>
+            </tr>
+            <tr>
+              <td><strong>Blocages & Freins</strong></td>
+              <td class="cell-before">On ne sait pas ce qui freine notre progression.</td>
+              <td class="cell-after">✨ Croyances limitantes identifiées et traitées par la PNL.</td>
+            </tr>
+            <tr>
+              <td><strong>Argent & Revenus</strong></td>
+              <td class="cell-before">Il entre, il sort chaque mois sans direction précise.</td>
+              <td class="cell-after">✨ Des objectifs chiffrés par an et par mois avec budget strict.</td>
+            </tr>
+            <tr>
+              <td><strong>Janvier 2027</strong></td>
+              <td class="cell-before">Des résolutions oubliées dès la fin février.</td>
+              <td class="cell-after">✨ Un plan d'action écrit prêt à être exécuté dès lundi.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 : POUR QUI / PAS POUR QUI -->
+  <section class="fit-section">
+    <div class="container">
+      <div class="fit-grid">
+        <div class="fit-card for-you">
+          <h3><i class="fa-solid fa-circle-check"></i> Cette journée est pour vous si :</h3>
+          <ul class="fit-list for-you">
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Vous avez une certaine stabilité matérielle, mais vous ressentez un profond vide intérieur.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Vous refusez catégoriquement d'entrer en 2027 sans un cap clair et mesurable.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Vous êtes prêt à écrire, réfléchir et vous remettre honnêtement en question pendant 8 heures.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Vous souhaitez harmoniser vos ambitions spirituelles, personnelles et financières.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>Vous êtes en couple et voulez avancer d'une même voix vers vos projets de vie.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fit-card not-for-you">
+          <h3><i class="fa-solid fa-circle-xmark"></i> Elle N'EST PAS pour vous si :</h3>
+          <ul class="fit-list not-for-you">
+            <li>
+              <i class="fa-solid fa-xmark"></i>
+              <span>Vous cherchez une conférence magistrale passive à écouter sans rien écrire.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-xmark"></i>
+              <span>Vous attendez une recette magique pour vous enrichir rapidement sans travail de fond.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-xmark"></i>
+              <span>Vous n'êtes pas prêt à regarder en face votre réalité financière et vos blocages personnels.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 : VOS ANIMATEURS -->
+  <section class="speakers-section" id="animateurs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Double Expertise</span>
+        <h2 class="section-title">Vos Animateurs & Mentors</h2>
+        <p class="section-desc">L'alliance rare de la Programmation Neuro-Linguistique et de l'Éducation Financière de haut niveau.</p>
+      </div>
+
+      <div class="speakers-grid">
+        <!-- SENATO -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar-circle">
+              <img src="images setonwe/julien_opt.jpg" alt="Sènato Julien KOUKPONOU" onerror="this.src='images setonwe/Photo Profil Julien.jpg'">
+            </div>
+            <div class="speaker-title-group">
+              <h3>Sènato Julien KOUKPONOU</h3>
+              <div class="speaker-tagline">PNL & Planification Stratégique</div>
+            </div>
+          </div>
+          <ul class="speaker-creds">
+            <li>
+              <i class="fa-solid fa-certificate"></i>
+              <span><strong>Praticien certifié en PNL</strong> (École de Coaching Québec, 2016).</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span><strong>Près de 10 ans</strong> à concevoir et animer des formations transformatrices en présentiel et en ligne.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-award"></i>
+              <span><strong>Mentor certifié Toastmasters International</strong> : animateur d'ateliers sur les objectifs personnels, accompagnant des dizaines de cadres et leaders.</span>
+            </li>
+           
+            <li>
+              <i class="fa-solid fa-diagram-project"></i>
+              <span><strong>Ancien fonctionnaire</strong>, spécialiste chevronné en planification et suivi-évaluation de projets.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- HERMIONNE -->
+        <div class="speaker-card">
+          <div class="speaker-header">
+            <div class="speaker-avatar-circle">
+              <img src="images setonwe/hermionne_opt.jpg" alt="Setonwe Hermionne HOUEDJISSI AKPA" onerror="this.src='images setonwe/Hermione.jpeg'">
+            </div>
+            <div class="speaker-title-group">
+              <h3>Setonwe Hermionne HOUEDJISSI AKPA</h3>
+              <div class="speaker-tagline">Coach Finance Personnelle & Couple</div>
+            </div>
+          </div>
+          <ul class="speaker-creds">
+            <li>
+              <i class="fa-solid fa-certificate"></i>
+              <span><strong>Coach certifiée</strong> en éducation financière personnelle et gestion financière du couple.</span>
+            </li>
+        
+            <li>
+              <i class="fa-solid fa-microphone"></i>
+              <span><strong>Conférencière renommée</strong> : sa conférence <em>« Femme, ose te réinventer »</em> a réuni plus de 300 personnes à l'Hôtel Azalaï de Cotonou en juillet 2026.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <span><strong>Gérante d'entreprise</strong> (Les Trésors de l'Éternel) & <strong>Auditrice gestionnaire comptable</strong> (14 ans d'expérience en finance & trésorerie).</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-users"></i>
+              <span><strong>Présidente de Houézè Toastmasters Club</strong>. Épouse et mère de 4 garçons, spécialiste de l'équilibre vie pro / famille.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8 : LE KIT DU PARTICIPANT -->
+  <section class="kit-section">
+    <div class="container">
+      <div class="kit-grid">
+        <div class="kit-visual">
+          <img src="images setonwe/Participant_kit_items_flat_lay_20261020185313.jpg" alt="Kit de matériel haut de gamme remis à chaque participant">
+        </div>
+
+        <div class="kit-content">
+          <h2>Tout est prévu pour vous. <br><span>Votre Kit Complet Inclus.</span></h2>
+          <p style="color:#E2D9EA;">Dès votre accueil et tout au long de la journée, vous recevez vos outils de travail personnels pour une expérience premium et mémorable.</p>
+
+          <div class="kit-items-list">
+            <div class="kit-item">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <div>
+                <h4>Le Manuel de Bord « Nouvelle Année, Nouvelle Vie »</h4>
+                <p>Le vault de templates et modèles pour consigner vos réflexions, vos moments eurêka et votre plan stratégique 2027-2036.</p>
+              </div>
+            </div>
+
+            
+            <div class="kit-item">
+              <i class="fa-solid fa-utensils"></i>
+              <div>
+                <h4>Déjeuner Gastronomique & Pauses Gourmandes</h4>
+                <p>Repas complet du midi et rafraîchissements inclus pour échanger et réseauter en toute convivialité.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9 : TARIFS & PAIEMENT FEDAPAY -->
+  <section class="pricing-section" id="tarifs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Investissement en Vous-Même</span>
+        <h2 class="section-title">Plus vous réservez tôt, moins vous payez</h2>
+        <p class="section-desc">
+          Les places sont strictement limitées à <strong>50 participants</strong> pour garantir un suivi personnalisé.
+          Tarif Early Bird valable jusqu'au <strong>25 novembre à 23h59</strong>.
+        </p>
+      </div>
+
+      <div class="pricing-cards">
+        <!-- FORMULE SOLO -->
+        <div class="pricing-card">
+          <div class="plan-name">Formule SOLO</div>
+          <div class="plan-desc">Pour vous poser seul(e) et clarifier vos 10 prochaines années</div>
+
+          <div class="price-box">
+            <div class="price-current" id="priceSoloVal">35 000 <span>FCFA</span></div>
+            <div class="price-saving" id="priceSoloSaving"><i class="fa-solid fa-tag"></i> Vous économisez 14 995 FCFA</div>
+            <div class="price-future" id="priceSoloFuture">Passe à <del>49 995 FCFA</del> le 26 novembre</div>
+          </div>
+
+          <ul class="plan-benefits">
+            <li><i class="fa-solid fa-check"></i> <span>Accès à la journée complète (8h00 - 17h00)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Bloc 1 Fondations (Vision, Valeurs, Croyances PNL)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Bloc 2 Finance (Objectifs 2036, Budget, Patrimoine)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Kit complet du participant remis sur place</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Déjeuner complet & pauses café inclus</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Accès immédiat au Groupe WhatsApp Privé</span></li>
+          </ul>
+
+          <button class="btn-pricing btn-primary-purple" id="btnPriceSolo" onclick="handleSelectPlan('solo')">
+            <i class="fa-solid fa-lock"></i> RÉSERVER EN SOLO — 35 000 F
+          </button>
+        </div>
+
+        <!-- FORMULE DUO -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge" id="pricingDuoBadge"><i class="fa-solid fa-heart"></i> RECOMMANDÉ · MAXIMUM D'ÉCONOMIE</div>
+          <div class="plan-name">Formule DUO</div>
+          <div class="plan-desc">En couple ou avec un(e) partenaire de vie / d'affaires pour travailler en équipe</div>
+
+          <div class="price-box">
+            <div class="price-current" id="priceDuoVal">59 995 <span>FCFA</span></div>
+            <div class="price-saving" id="priceDuoSaving"><i class="fa-solid fa-fire"></i> Vous économisez 30 000 FCFA !</div>
+            <div class="price-future" id="priceDuoFuture">Passe à <del>89 995 F</del> le 26 novembre</div>
+          </div>
+
+          <ul class="plan-benefits">
+            <li><i class="fa-solid fa-check"></i> <span><strong>Accès complet pour 2 personnes</strong> (8h-17h)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Aligner sa vision d'avenir et son foyer</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Harmoniser les finances et les projets du couple</span></li>
+            <li><i class="fa-solid fa-check"></i> <span><strong>2 Kits complets de participant</strong> remis</span></li>
+            <li><i class="fa-solid fa-check"></i> <span><strong>2 Déjeuners complets</strong> & pauses café</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Accès immédiat au Groupe WhatsApp Privé</span></li>
+          </ul>
+
+          <button class="btn-pricing btn-gold" id="btnPriceDuo" onclick="handleSelectPlan('duo')">
+            <i class="fa-solid fa-lock"></i> RÉSERVER EN DUO — 59 995 F
+          </button>
+        </div>
+      </div>
+
+      <div class="pricing-security-bar">
+        <span><i class="fa-solid fa-shield-halved" style="color:var(--color-gold-dark);"></i> Paiement 100% sécurisé par FedaPay</span>
+        <span><i class="fa-solid fa-mobile-screen"></i> MTN Mobile Money / Moov Money / Celtiis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10 : FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+      <h2 class="section-title">Questions Fréquentes</h2>
+        <p class="section-desc">Tout ce que vous devez savoir avant de valider votre réservation.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>Où a lieu exactement la journée ?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Le séminaire a lieu dans un cadre calme et propice à la réflexion à <strong>Cotonou</strong>. Pour des raisons d'intimité et de sécurité, l'adresse exacte et l'itinéraire GPS sont envoyés directement aux inscrits par e-mail et sur WhatsApp dès confirmation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Dois-je dévoiler mes revenus ou ma situation financière devant les autres ?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <strong>Absolument pas.</strong> Le travail est strictement personnel et confidentiel. Vous écrivez pour vous-même dans votre carnet de bord. Aucune information privée n'est partagée sans votre accord exprès.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Puis-je venir avec mon conjoint ou un proche ?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <strong>Oui, c'est même vivement conseillé !</strong> C'est la raison d'être du tarif Duo. Bâtir sa vision financière et personnelle à deux permet d'éviter les malentendus de couple et d'avancer dans la même direction avec une immense sérénité.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Que se passe-t-il après la journée ?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Vous repartez avec votre plan stratégique 2027-2036 validé et votre boussole à 10 ans. Pour ceux qui souhaitent un suivi approfondi dans la mise en œuvre de leurs investissements, un accompagnement individuel sera proposé.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Comment fonctionne le paiement par FedaPay ?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Vous cliquez sur le bouton de réservation, vous entrez votre nom, email et numéro WhatsApp, puis vous validez directement par Mobile Money (MTN, Moov, Celtiis) ou Carte Bancaire sans quitter la page. Dès la validation, vous êtes immédiatement redirigé vers la page de confirmation avec le lien du groupe WhatsApp privé.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11 : CLÔTURE & P.S. -->
+  <section class="footer-cta">
+    <div class="container">
+      <h2>Vos 10 prochaines années commencent le 5 décembre.</h2>
+      <p>
+        Vous pouvez aborder 2027 comme les années précédentes : des vœux pieux oubliés en février.  
+        Ou bien vous pouvez prendre une journée pour décider souverainement de ce qu'elle sera.
+      </p>
+
+      <!-- MINUTEUR SECTION FINALE -->
+      <div class="footer-countdown-box">
+        <div class="footer-timer-title" id="footerTimerTitle">
+          <i class="fa-regular fa-clock" style="color:var(--color-gold-light);"></i>
+          <span id="footerTimerLabel">Fin du tarif Early Bird dans :</span>
+        </div>
+        <div class="footer-timer-grid">
+          <div class="footer-timer-card">
+            <span class="timer-val" id="f-days">00</span>
+            <span class="timer-lbl">Jours</span>
+          </div>
+          <div class="footer-timer-card">
+            <span class="timer-val" id="f-hours">00</span>
+            <span class="timer-lbl">Heures</span>
+          </div>
+          <div class="footer-timer-card">
+            <span class="timer-val" id="f-mins">00</span>
+            <span class="timer-lbl">Minutes</span>
+          </div>
+          <div class="footer-timer-card">
+            <span class="timer-val" id="f-secs">00</span>
+            <span class="timer-lbl">Secondes</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#tarifs" class="btn-gold-cta" id="footerCtaBtn">
+        <i class="fa-solid fa-lock"></i> BLOQUER MA PLACE AU TARIF PROMO (35 000 FCFA)
+      </a>
+
+      <div id="footerPsText" style="margin-top:30px; font-size:0.95rem; color:#E8C96A; max-width:650px; margin-left:auto; margin-right:auto;">
+        <strong>P.S. :</strong> Le tarif préférentiel s'arrête irrévocablement le <strong>25 novembre à minuit</strong>. Après cette date, le tarif passe à 49 995 FCFA (Solo) et 89 995 FCFA (Duo). Les inscriptions ferment le 2 décembre. <strong>50 places seulement.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <img src="images setonwe/logo SETONWE FINANCES.png" alt="Setonwe Finances Logo" onerror="this.style.display='none'">
+          <span>© 2026 Setonwe Finances. Tous droits réservés.</span>
+        </div>
+        <div style="display:flex; gap:20px; align-items:center;">
+          <a href="https://wa.me/2290147799928" target="_blank" style="color:var(--color-gold-light);">
+            <i class="fa-brands fa-whatsapp"></i> Support : +229 01 47799928
+          </a>
+          <span>• Design by KDIEX, Cotonou, Bénin</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/2290147799928?text=Bonjour,%20je%20souhaite%20des%20informations%20sur%20le%20s%C3%A9minaire%20Nouvelle%20Ann%C3%A9e%20Nouvelle%20Vie" class="floating-whatsapp" target="_blank" title="Discuter sur WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- MODAL DE PAIEMENT FEDAPAY JS -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCheckoutModal()"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="modal-header">
+        <h3>Finaliser ma Réservation</h3>
+        <p>Séminaire « Nouvelle Année, Nouvelle Vie » · 5 Décembre</p>
+      </div>
+
+      <div class="plan-summary-pill">
+        <span id="modalPlanName">Formule SOLO</span>
+        <span id="modalPlanPrice" style="color:var(--color-primary); font-size:1.15rem;">35 000 FCFA</span>
+      </div>
+
+      <form id="paymentForm" onsubmit="handlePaymentSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="custFirstname">Prénom *</label>
+            <input type="text" id="custFirstname" class="form-control" placeholder="Ex: Jean" required>
+          </div>
+          <div class="form-group">
+            <label for="custLastname">Nom *</label>
+            <input type="text" id="custLastname" class="form-control" placeholder="Ex: Dossou" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="custEmail">Adresse E-mail *</label>
+          <input type="email" id="custEmail" class="form-control" placeholder="nom@exemple.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="custPhone">Numéro WhatsApp / Mobile Money *</label>
+          <input type="tel" id="custPhone" class="form-control" placeholder="Ex: 0147799928 ou 97000000" required>
+        </div>
+
+        <button type="submit" class="btn-submit-pay" id="btnPayAction">
+          <i class="fa-solid fa-lock"></i> Procéder au Règlement Sécurisé
+        </button>
+
+        <div class="modal-security-note">
+          <i class="fa-solid fa-shield-halved" style="color:var(--color-gold-dark);"></i>
+          Paiement crypté FedaPay · MTN, Moov, Celtiis, Carte Bancaire
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+
+    // =========================================================================
+    // CONFIGURATION DES ÉCHÉANCES ET DES TARIFS (BASCULEMENT AUTOMATIQUE)
+    // =========================================================================
+    // Phase 1 : Early Bird jusqu'au 25 Novembre 2026 à 23h59:59
+    // Phase 2 : Tarif Normal du 26 Novembre au 2 Décembre 2026 à 23h59:59
+    // Phase 3 : Clôture définitive après le 2 Décembre 2026 à 23h59:59
+    const DEADLINE_EARLY_BIRD = new Date("2026-11-25T23:59:59+01:00").getTime();
+    const DEADLINE_FINAL      = new Date("2026-12-02T23:59:59+01:00").getTime();
+
+    const PRICING_CONFIG = {
+      earlyBird: {
+        solo: 35000,
+        duo: 59995,
+        soloSaving: '<i class="fa-solid fa-tag"></i> Vous économisez 14 995 FCFA',
+        duoSaving: '<i class="fa-solid fa-fire"></i> Vous économisez 30 000 FCFA !',
+        soloFuture: 'Passe à <del>49 995 FCFA</del> le 26 novembre',
+        duoFuture: 'Passe à <del>89 995 FCFA</del> le 26 novembre',
+        bannerBadge: 'Offre Early Bird',
+        bannerText: '🔥 Tarif Early Bird en cours jusqu\'au <strong>25 Novembre à 23h59</strong> · Économisez jusqu\'à <strong>30 000 FCFA</strong> !',
+        footerLabel: 'Fin du tarif Early Bird dans :',
+        heroCta: '<i class="fa-solid fa-pen-fancy"></i> JE RÉSERVE MA PLACE (DÈS 35 000 FCFA)',
+        footerCta: '<i class="fa-solid fa-lock"></i> BLOQUER MA PLACE AU TARIF PROMO (35 000 FCFA)',
+        psText: '<strong>P.S. :</strong> Le tarif préférentiel s\'arrête irrévocablement le <strong>25 novembre à minuit</strong>. Après cette date, le tarif passe à 49 995 FCFA (Solo) et 89 995 FCFA (Duo). Les inscriptions ferment le 2 décembre. <strong>50 places seulement.</strong>'
+      },
+      normal: {
+        solo: 49995,
+        duo: 89995,
+        soloSaving: '<i class="fa-solid fa-clock"></i> Tarif Standard en cours',
+        duoSaving: '<i class="fa-solid fa-users"></i> Formule Duo avantageuse',
+        soloFuture: 'Clôture définitive le 2 décembre',
+        duoFuture: 'Clôture définitive le 2 décembre',
+        bannerBadge: 'Derniers Jours',
+        bannerText: '⚡ Derniers jours d\'inscription · Clôture définitive le <strong>2 Décembre à 23h59</strong> !',
+        footerLabel: 'Clôture définitive des inscriptions dans :',
+        heroCta: '<i class="fa-solid fa-pen-fancy"></i> JE RÉSERVE MA PLACE (DÈS 49 995 FCFA)',
+        footerCta: '<i class="fa-solid fa-lock"></i> BLOQUER MA PLACE (49 995 FCFA)',
+        psText: '<strong>P.S. :</strong> Les inscriptions ferment définitivement le <strong>2 décembre à minuit</strong>. Aucune inscription sur place ne sera acceptée. <strong>50 places seulement.</strong>'
+      },
+      closed: {
+        solo: 49995,
+        duo: 89995,
+        soloSaving: '<i class="fa-solid fa-lock"></i> Inscriptions closes',
+        duoSaving: '<i class="fa-solid fa-lock"></i> Inscriptions closes',
+        soloFuture: 'Édition complète',
+        duoFuture: 'Édition complète',
+        bannerBadge: 'Complet',
+        bannerText: '🔒 Les inscriptions pour l\'édition du 5 décembre sont officiellement closes.',
+        footerLabel: 'Inscriptions Closes',
+        heroCta: '<i class="fa-solid fa-lock"></i> SÉMINAIRE COMPLET',
+        footerCta: '<i class="fa-solid fa-lock"></i> SÉMINAIRE COMPLET',
+        psText: 'Les inscriptions sont désormais closes. Pour toute question ou pour rejoindre la liste d\'attente de la prochaine édition, contactez le support WhatsApp au +229 01 47799928.'
+      }
+    };
+
+    let currentPhaseKey = null;
+    let simulatedPhaseOverride = null; // Utilisable pour les tests manuels
+
+    function updateCountdownAndPricing() {
+      const now = Date.now();
+      let targetDeadline;
+      let newPhaseKey;
+
+      if (simulatedPhaseOverride) {
+        newPhaseKey = simulatedPhaseOverride;
+        targetDeadline = (newPhaseKey === 'earlyBird') ? DEADLINE_EARLY_BIRD : DEADLINE_FINAL;
+      } else {
+        if (now < DEADLINE_EARLY_BIRD) {
+          newPhaseKey = 'earlyBird';
+          targetDeadline = DEADLINE_EARLY_BIRD;
+        } else if (now < DEADLINE_FINAL) {
+          newPhaseKey = 'normal';
+          targetDeadline = DEADLINE_FINAL;
+        } else {
+          newPhaseKey = 'closed';
+          targetDeadline = now;
+        }
+      }
+
+      // Détection du basculement automatique
+      if (newPhaseKey !== currentPhaseKey) {
+        currentPhaseKey = newPhaseKey;
+        applyPhasePricing(currentPhaseKey);
+      }
+
+      // Calcul du décompte
+      const diff = Math.max(0, targetDeadline - now);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const pad = (n) => String(n).padStart(2, '0');
+
+      // Mise à jour minuteur Header
+      const hd = document.getElementById('h-days');
+      const hh = document.getElementById('h-hours');
+      const hm = document.getElementById('h-mins');
+      const hs = document.getElementById('h-secs');
+      if (hd) hd.textContent = pad(days);
+      if (hh) hh.textContent = pad(hours);
+      if (hm) hm.textContent = pad(mins);
+      if (hs) hs.textContent = pad(secs);
+
+      // Mise à jour minuteur Footer
+      const fd = document.getElementById('f-days');
+      const fh = document.getElementById('f-hours');
+      const fm = document.getElementById('f-mins');
+      const fs = document.getElementById('f-secs');
+      if (fd) fd.textContent = pad(days);
+      if (fh) fh.textContent = pad(hours);
+      if (fm) fm.textContent = pad(mins);
+      if (fs) fs.textContent = pad(secs);
+    }
+
+    function applyPhasePricing(phaseKey) {
+      const p = PRICING_CONFIG[phaseKey];
+      if (!p) return;
+
+      // 1. Bannière supérieure
+      const bBadge = document.getElementById('bannerBadge');
+      const bText = document.getElementById('bannerText');
+      if (bBadge) bBadge.textContent = p.bannerBadge;
+      if (bText) bText.innerHTML = p.bannerText;
+
+      // 2. Libellé minuteur footer
+      const fLabel = document.getElementById('footerTimerLabel');
+      if (fLabel) fLabel.textContent = p.footerLabel;
+
+      // 3. Carte Tarif Solo
+      const pSoloVal = document.getElementById('priceSoloVal');
+      const pSoloSav = document.getElementById('priceSoloSaving');
+      const pSoloFut = document.getElementById('priceSoloFuture');
+      const btnSolo = document.getElementById('btnPriceSolo');
+      if (pSoloVal) pSoloVal.innerHTML = `${p.solo.toLocaleString('fr-FR')} <span>FCFA</span>`;
+      if (pSoloSav && p.soloSaving) pSoloSav.innerHTML = p.soloSaving;
+      if (pSoloFut && p.soloFuture) pSoloFut.innerHTML = p.soloFuture;
+      if (btnSolo) {
+        if (phaseKey === 'closed') {
+          btnSolo.innerHTML = '<i class="fa-solid fa-lock"></i> COMPLET';
+          btnSolo.disabled = true;
+          btnSolo.style.opacity = '0.6';
+          btnSolo.style.cursor = 'not-allowed';
+        } else {
+          btnSolo.innerHTML = `<i class="fa-solid fa-lock"></i> RÉSERVER EN SOLO — ${p.solo.toLocaleString('fr-FR')} F`;
+          btnSolo.disabled = false;
+          btnSolo.style.opacity = '1';
+          btnSolo.style.cursor = 'pointer';
+        }
+      }
+
+      // 4. Carte Tarif Duo
+      const pDuoVal = document.getElementById('priceDuoVal');
+      const pDuoSav = document.getElementById('priceDuoSaving');
+      const pDuoFut = document.getElementById('priceDuoFuture');
+      const btnDuo = document.getElementById('btnPriceDuo');
+      if (pDuoVal) pDuoVal.innerHTML = `${p.duo.toLocaleString('fr-FR')} <span>FCFA</span>`;
+      if (pDuoSav && p.duoSaving) pDuoSav.innerHTML = p.duoSaving;
+      if (pDuoFut && p.duoFuture) pDuoFut.innerHTML = p.duoFuture;
+      if (btnDuo) {
+        if (phaseKey === 'closed') {
+          btnDuo.innerHTML = '<i class="fa-solid fa-lock"></i> COMPLET';
+          btnDuo.disabled = true;
+          btnDuo.style.opacity = '0.6';
+          btnDuo.style.cursor = 'not-allowed';
+        } else {
+          btnDuo.innerHTML = `<i class="fa-solid fa-lock"></i> RÉSERVER EN DUO — ${p.duo.toLocaleString('fr-FR')} F`;
+          btnDuo.disabled = false;
+          btnDuo.style.opacity = '1';
+          btnDuo.style.cursor = 'pointer';
+        }
+      }
+
+      // 5. Boutons Hero, Footer CTA et P.S.
+      const heroBtn = document.getElementById('heroCtaBtn');
+      const footerBtn = document.getElementById('footerCtaBtn');
+      const footerPs = document.getElementById('footerPsText');
+      if (heroBtn) heroBtn.innerHTML = p.heroCta;
+      if (footerBtn) footerBtn.innerHTML = p.footerCta;
+      if (footerPs && p.psText) footerPs.innerHTML = p.psText;
+    }
+
+    // Lancement immédiat et boucle par seconde
+    updateCountdownAndPricing();
+    setInterval(updateCountdownAndPricing, 1000);
+
+    // Fonction de test dans la console (ex: simulatePhase('normal'))
+    window.simulatePhase = function(phase) {
+      if (PRICING_CONFIG[phase]) {
+        simulatedPhaseOverride = phase;
+        updateCountdownAndPricing();
+        console.log(`Simulation activée: phase ${phase}`);
+      } else {
+        simulatedPhaseOverride = null;
+        updateCountdownAndPricing();
+        console.log("Simulation désactivée, retour à l'horloge réelle.");
+      }
+    };
+
+    // =========================================================================
+    // CONFIGURATION FEDAPAY
+    // =========================================================================
+    // Clé publique FedaPay officielle en production
+    const FEDAPAY_PUBLIC_KEY = 'pk_live_thmZxJF1sTikTpyP3bf29axk'; 
+
+    // Tarifs normaux actifs (35 000 FCFA Solo / 59 995 FCFA Duo)
+    const IS_LIVE_TEST_100_FCFA = false;
+
+    let currentOrder = {
+      planId: 'solo',
+      amount: 35000,
+      planName: 'Formule SOLO'
+    };
+
+    function handleSelectPlan(planId) {
+      if (currentPhaseKey === 'closed') {
+        alert("Les inscriptions sont closes pour cette édition.");
+        return;
+      }
+      const activePricing = PRICING_CONFIG[currentPhaseKey || 'earlyBird'];
+      const realAmount = (planId === 'solo') ? activePricing.solo : activePricing.duo;
+      const amount = IS_LIVE_TEST_100_FCFA ? 100 : realAmount;
+      const planName = (planId === 'solo') ? 'Formule SOLO' : 'Formule DUO';
+      openCheckoutModal(planId, amount, planName, realAmount);
+    }
+
+    function openCheckoutModal(planId, amount, planName, realAmount) {
+      currentOrder.planId = planId;
+      currentOrder.amount = amount;
+      currentOrder.realAmount = realAmount || amount;
+      currentOrder.planName = planName;
+
+      const testLabel = IS_LIVE_TEST_100_FCFA ? ' <span style="color:#C62828; font-size:0.85rem; font-weight:700;">[Test 100 F]</span>' : '';
+      document.getElementById('modalPlanName').innerHTML = planName + testLabel;
+      document.getElementById('modalPlanPrice').innerText = amount.toLocaleString('fr-FR') + ' FCFA';
+      document.getElementById('checkoutModal').classList.add('active');
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkoutModal').classList.remove('active');
+    }
+
+    // Stockage sécurisé des données client pour la redirection
+    let lastCustomerData = null;
+
+    function goToConfirmationWithParams(txId) {
+      if (!lastCustomerData || !txId) {
+        return;
+      }
+      const name = encodeURIComponent(lastCustomerData.firstname + ' ' + lastCustomerData.lastname);
+      const email = encodeURIComponent(lastCustomerData.email);
+      const plan = encodeURIComponent(lastCustomerData.planName);
+      const amount = lastCustomerData.amount;
+      window.location.href = `confirmation.html?tx_id=${encodeURIComponent(txId)}&name=${name}&email=${email}&plan=${plan}&amount=${amount}`;
+    }
+
+    // Écoute proactive et stricte des messages postMessage envoyés par FedaPay
+    window.addEventListener('message', function(event) {
+      if (event.origin && event.origin.includes('fedapay.com')) {
+        const d = event.data;
+        if (d && typeof d === 'object') {
+          // SEULES les transactions explicitement approuvées redirigent
+          if (d.transaction && (d.transaction.status === 'approved' || d.transaction.status === 'transferred')) {
+            goToConfirmationWithParams(d.transaction.id);
+          } else if (d.status === 'approved' && d.transaction && d.transaction.id) {
+            goToConfirmationWithParams(d.transaction.id);
+          }
+        }
+      }
+    });
+
+    function handlePaymentSubmit(event) {
+      event.preventDefault();
+
+      const firstname = document.getElementById('custFirstname').value.trim();
+      const lastname = document.getElementById('custLastname').value.trim();
+      const email = document.getElementById('custEmail').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+
+      if (!firstname || !lastname || !email || !phone) {
+        alert('Veuillez remplir tous les champs obligatoires.');
+        return;
+      }
+
+      // Nettoyage rigoureux du numéro de téléphone (uniquement chiffres)
+      let cleanPhone = phone.replace(/[^0-9]/g, '');
+      if (cleanPhone.startsWith('229') && cleanPhone.length > 8) {
+        cleanPhone = cleanPhone.substring(3);
+      }
+
+      const amountToPay = currentOrder.amount;
+
+      lastCustomerData = {
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        phone: cleanPhone,
+        planName: currentOrder.planName,
+        amount: amountToPay
+      };
+
+      const payBtn = document.getElementById('btnPayAction');
+      payBtn.disabled = true;
+      payBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Ouverture FedaPay...';
+
+      // Déclenchement sécurisé du widget officiel FedaPay JS Checkout
+      if (typeof FedaPay !== 'undefined' && FEDAPAY_PUBLIC_KEY && !FEDAPAY_PUBLIC_KEY.includes('placeholder')) {
+        try {
+          const widget = FedaPay.init({
+            public_key: FEDAPAY_PUBLIC_KEY,
+            environment: 'live',
+            currency: {
+              iso: 'XOF'
+            },
+            transaction: {
+              amount: amountToPay,
+              description: 'Seminaire Nouvelle Annee Nouvelle Vie - ' + currentOrder.planName
+            },
+            customer: {
+              firstname: firstname,
+              lastname: lastname,
+              email: email,
+              phone_number: {
+                number: cleanPhone,
+                country: 'bj'
+              }
+            },
+            onComplete: function(response) {
+              console.log('FedaPay onComplete:', response);
+              const FP = window['FedaPay'];
+
+              // 1. Si dialogue fermé ou paiement annulé : AUCUNE redirection
+              if (response && (response.reason === 'DIALOG_DISMISSED' || (FP && response.reason === FP.DIALOG_DISMISSED))) {
+                console.log('Paiement annulé ou dialogue fermé sans validation.');
+                payBtn.disabled = false;
+                payBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Procéder au Règlement Sécurisé';
+                return;
+              }
+
+              // 2. SEULS les paiements approuvés et effectifs sont redirigés vers la confirmation
+              if (response && response.transaction && (response.transaction.status === 'approved' || response.transaction.status === 'transferred')) {
+                goToConfirmationWithParams(response.transaction.id);
+              } else if (response && response.reason === 'CHECKOUT_COMPLETED' && response.transaction && response.transaction.status === 'approved') {
+                goToConfirmationWithParams(response.transaction.id);
+              } else {
+                console.log('Paiement non approuvé :', response);
+                payBtn.disabled = false;
+                payBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Procéder au Règlement Sécurisé';
+              }
+            }
+          });
+          widget.open();
+
+          // Réactivation du bouton en cas de retour
+          setTimeout(() => {
+            payBtn.disabled = false;
+            payBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Procéder au Règlement Sécurisé';
+          }, 2000);
+
+        } catch (err) {
+          console.error('Erreur FedaPay:', err);
+          payBtn.disabled = false;
+          payBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Procéder au Règlement Sécurisé';
+          alert('Erreur lors du lancement de FedaPay : ' + (err.message || err));
+        }
+      } else {
+        alert('Erreur de configuration du module de paiement.');
+        payBtn.disabled = false;
+        payBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Procéder au Règlement Sécurisé';
+      }
+    }
+
+    function fallbackToConfirmation(firstname, lastname, email, phone) {
+      const txId = 'FP-' + Math.floor(100000 + Math.random() * 900000);
+      window.location.href = `confirmation.html?tx_id=${txId}&name=${encodeURIComponent(firstname + ' ' + lastname)}&email=${encodeURIComponent(email)}&plan=${encodeURIComponent(currentOrder.planName)}&amount=${currentOrder.amount}`;
+    }
+
+    // Fermeture de la modale en cliquant en dehors
+    document.getElementById('checkoutModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeCheckoutModal();
+      }
+    });
+  </script>
+</body>
+</html>
