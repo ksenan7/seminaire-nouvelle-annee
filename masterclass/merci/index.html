@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C'est confirmé ! · Masterclass Cap 2027-2036 · Setonwe Finances</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#260538">
+<link rel="icon" href="https://setonwefinances.com/images%20setonwe/logo%20SETONWE%20FINANCES.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--violet:#260538;--violet2:#3B0A57;--or:#C9A227;--or2:#E8C96A;--lilas:#F2ECF7;--encre:#1E1226;--gris:#6C557E;--ligne:#E7DEEE;--wa:#1FA855}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--encre);line-height:1.6;background:var(--lilas);-webkit-font-smoothing:antialiased}
+  h1,h2{font-family:'Cinzel',Georgia,serif;line-height:1.15;margin:0 0 .5em}
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  .top{background:var(--violet)}
+  .top .wrap{padding-top:12px;padding-bottom:12px}
+  .top img{height:44px;width:auto;display:block}
+  .hero{background:var(--violet);color:#fff;text-align:center;padding:36px 0 90px}
+  .check{width:64px;height:64px;border-radius:50%;background:var(--or);color:var(--violet);font-size:2rem;font-weight:800;display:inline-flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .hero h1{font-size:clamp(1.7rem,5vw,2.5rem);color:#fff}
+  .hero h1 span{color:var(--or)}
+  .hero p{color:#E2D9EA;margin:0 auto;max-width:560px}
+  .live{display:none;background:#C62828;color:#fff;border-radius:12px;padding:12px 16px;margin:18px auto 0;max-width:520px;font-weight:700}
+  .live a{color:#fff}
+
+  .box{background:#fff;border-radius:18px;padding:24px;margin:-60px auto 22px;box-shadow:0 18px 40px rgba(38,5,56,.15);position:relative}
+  .box+.box{margin-top:0}
+  .box h2{font-size:1.25rem;color:var(--violet)}
+  .zoom{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:6px 0 16px;font-size:.98rem}
+  .zoom dt{color:var(--gris)}
+  .zoom dd{margin:0;font-weight:700;font-variant-numeric:tabular-nums}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--or);color:var(--violet);font-weight:800;text-decoration:none;padding:15px 18px;border-radius:12px;border:0;font:inherit;font-weight:800;font-size:1rem;cursor:pointer;margin-top:10px}
+  .btn:hover{filter:brightness(1.05)}
+  .btn.v{background:var(--violet);color:#fff}
+  .btn.wa{background:var(--wa);color:#fff}
+  .btn.ghost{background:#fff;color:var(--violet2);border:1.5px solid #D9CCE4}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .row .btn{margin-top:10px}
+
+  .todo{list-style:none;padding:0;margin:0;counter-reset:t}
+  .todo>li{counter-increment:t;position:relative;padding:4px 0 18px 48px}
+  .todo>li:before{content:counter(t);position:absolute;left:0;top:2px;width:34px;height:34px;border-radius:50%;background:var(--violet);color:var(--or2);font-weight:800;display:flex;align-items:center;justify-content:center}
+  .todo h3{margin:0 0 4px;font-size:1.05rem;color:var(--violet2)}
+  .todo p{margin:0;color:#3d2b4a}
+
+  .q{background:var(--lilas);border-left:4px solid var(--or);border-radius:10px;padding:14px 16px;margin-top:6px}
+  .q b{color:var(--violet2)}
+  .sem{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:center}
+  .sem .d{background:var(--violet);color:#fff;border-radius:14px;text-align:center;padding:10px 0}
+  .sem .d b{display:block;font-family:'Cinzel',serif;font-size:2rem;color:var(--or);line-height:1}
+  .sem p{margin:0}
+  .copied{font-size:.85rem;color:var(--wa);font-weight:700;display:none;text-align:center;margin-top:6px}
+  .foot{text-align:center;font-size:.85rem;color:var(--gris);padding:10px 20px 40px}
+  .foot a{color:var(--violet2)}
+  @media (max-width:560px){.row{grid-template-columns:1fr}.row .btn{margin-top:0}.row{gap:10px;margin-top:10px}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap"><a href="https://setonwefinances.com/"><img src="https://setonwefinances.com/images%20setonwe/logo%20SETONWE%20FINANCES.png" alt="Setonwe Finances" width="140" height="44"></a></div></header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="check">✓</div>
+    <h1>C'est confirmé<span id="nom"></span> !<br>Votre place est réservée.</h1>
+    <p>Rendez-vous le <b style="color:#fff">dimanche 15 novembre à 17h00</b> (heure de Cotonou) pour la masterclass Cap 2027-2036. Le lien Zoom vient aussi de partir par e-mail. Pensez à regarder dans vos spams.</p>
+    <div class="live" id="live">🔴 La masterclass est en cours : <a id="live-link" href="#">rejoindre maintenant</a></div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <div class="box">
+    <h2>Votre accès Zoom</h2>
+    <dl class="zoom">
+      <dt>Date</dt><dd>Dim. 15 novembre 2026</dd>
+      <dt>Heure</dt><dd>17h00 – 18h30 (GMT+1)</dd>
+      <dt>ID de réunion</dt><dd>818 2124 7198</dd>
+      <dt>Code secret</dt><dd>467299</dd>
+    </dl>
+    <a class="btn v" id="zoom" href="#" target="_blank" rel="noopener">💻 Ouvrir le lien Zoom</a>
+    <div class="row">
+      <a class="btn ghost" id="gcal" href="#" target="_blank" rel="noopener">📅 Google Agenda</a>
+      <button class="btn ghost" id="ics" type="button">📥 Autre agenda (.ics)</button>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>3 choses à faire maintenant</h2>
+    <ol class="todo">
+      <li>
+        <h3>Rejoignez le groupe WhatsApp des inscrits</h3>
+        <p>C'est là que passent les rappels et le lien le jour J.</p>
+        <a class="btn wa" id="wa-group" href="#" target="_blank" rel="noopener">Rejoindre le groupe WhatsApp</a>
+      </li>
+      <li>
+        <h3>Ajoutez la masterclass à votre agenda</h3>
+        <p>Utilisez les boutons Google Agenda ou .ics ci-dessus, avec un rappel 1 heure avant.</p>
+      </li>
+      <li>
+        <h3>Préparez un cahier et un stylo</h3>
+        <p>Ce n'est pas une conférence, c'est une soirée de travail. Vous repartirez avec trois choses écrites de votre main. Sur téléphone, installez l'application Zoom dès maintenant.</p>
+        <div class="q"><b>Question bonus :</b> notez dès maintenant votre réponse, nous y reviendrons en direct. « Où serez-vous dans 10 ans ? » Si la réponse est floue, vous êtes exactement au bon endroit.</div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="box">
+    <h2>Invitez votre conjoint ou un proche</h2>
+    <p style="margin:0">La masterclass se vit mieux à deux. Envoyez-lui le lien d'inscription : il ou elle devra s'inscrire avec sa propre adresse e-mail.</p>
+    <div class="row">
+      <a class="btn wa" id="share-wa" href="#" target="_blank" rel="noopener">Partager sur WhatsApp</a>
+      <button class="btn ghost" id="copy" type="button">🔗 Copier le lien</button>
+    </div>
+    <div class="copied" id="copied">Lien copié !</div>
+  </div>
+
+  <div class="box">
+    <div class="sem">
+      <div class="d"><b>5</b>déc.</div>
+      <div>
+        <p style="font-weight:800;color:var(--violet2)">Pour aller plus loin : séminaire « Nouvelle Année, Nouvelle Vie »</p>
+        <p>Une journée en présentiel à Cotonou, samedi 5 décembre, de 8h00 à 17h00. Nous le présenterons à la fin de la masterclass.</p>
+      </div>
+    </div>
+    <a class="btn ghost" href="https://setonwefinances.com/" target="_blank" rel="noopener">Découvrir le séminaire</a>
+  </div>
+
+</main>
+
+<div class="foot">Un souci d'accès ? <a href="https://wa.me/2290147799928?text=Bonjour%2C%20je%20suis%20inscrit(e)%20%C3%A0%20la%20masterclass%20du%2015%20novembre%20et%20j%27ai%20une%20question">WhatsApp +229 01 47 79 99 28</a><br>© 2026 Setonwe Finances · Design by KDIEX, Cotonou</div>
+
+<script>
+/* ===================== CONFIGURATION ===================== */
+var CONFIG = {
+  ZOOM_URL: "https://us06web.zoom.us/j/81821247198?pwd=CBFQZHHUZfLv7mBavuqBFQyOBXzTaG.1",
+  ZOOM_ID: "818 2124 7198",
+  ZOOM_CODE: "467299",
+  WHATSAPP_GROUPE: "https://chat.whatsapp.com/BimEt2hhdwEHS665fYVLJT",
+  PAGE_INSCRIPTION: "https://setonwefinances.com/masterclass/",
+  DEBUT_UTC: "20261115T160000Z",
+  FIN_UTC:   "20261115T173000Z",
+  DEBUT: "2026-11-15T17:00:00+01:00",
+  FIN:   "2026-11-15T18:30:00+01:00"
+};
+/* ========================================================= */
+
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+
+  // Prénom
+  var p = new URLSearchParams(location.search).get('p');
+  if (!p) { try { p = sessionStorage.getItem('mc_prenom'); } catch(e){} }
+  if (p) $('nom').textContent = ', ' + p.slice(0,40);
+
+  // Liens
+  $('zoom').href = CONFIG.ZOOM_URL;
+  $('live-link').href = CONFIG.ZOOM_URL;
+  $('wa-group').href = CONFIG.WHATSAPP_GROUPE;
+
+  var titre = "Masterclass Cap 2027-2036 (Setonwe Finances)";
+  var details = "Masterclass gratuite en direct sur Zoom.\n\nLien : " + CONFIG.ZOOM_URL +
+    "\nID de réunion : " + CONFIG.ZOOM_ID + "\nCode secret : " + CONFIG.ZOOM_CODE +
+    "\n\nPrévoyez un cahier et un stylo.\nGroupe WhatsApp : " + CONFIG.WHATSAPP_GROUPE;
+
+  $('gcal').href = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    "&text=" + encodeURIComponent(titre) +
+    "&dates=" + CONFIG.DEBUT_UTC + "/" + CONFIG.FIN_UTC +
+    "&details=" + encodeURIComponent(details) +
+    "&location=" + encodeURIComponent(CONFIG.ZOOM_URL);
+
+  $('ics').addEventListener('click', function(){
+    var esc = function(s){ return s.replace(/\\/g,'\\\\').replace(/,/g,'\\,').replace(/;/g,'\\;').replace(/\n/g,'\\n'); };
+    var ics = [
+      "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Setonwe Finances//Masterclass//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      "UID:masterclass-cap-2027-2036@setonwefinances.com",
+      "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g,'').split('.')[0] + "Z",
+      "DTSTART:" + CONFIG.DEBUT_UTC, "DTEND:" + CONFIG.FIN_UTC,
+      "SUMMARY:" + esc(titre), "DESCRIPTION:" + esc(details), "LOCATION:" + esc(CONFIG.ZOOM_URL), "URL:" + CONFIG.ZOOM_URL,
+      "BEGIN:VALARM","TRIGGER:-PT1H","ACTION:DISPLAY","DESCRIPTION:La masterclass commence dans 1 heure","END:VALARM",
+      "END:VEVENT","END:VCALENDAR"
+    ].join("\r\n");
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([ics], {type:'text/calendar;charset=utf-8'}));
+    a.download = "masterclass-cap-2027-2036.ics";
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  // Partage
+  var msg = "Je me suis inscrit(e) à une masterclass gratuite pour poser le cap de nos 10 prochaines années, et de notre argent. Dimanche 15 novembre à 17h00, sur Zoom. Inscris-toi aussi : " + CONFIG.PAGE_INSCRIPTION + "?utm_source=partage";
+  $('share-wa').href = "https://wa.me/?text=" + encodeURIComponent(msg);
+  $('copy').addEventListener('click', function(){
+    var url = CONFIG.PAGE_INSCRIPTION + "?utm_source=partage";
+    var ok = function(){ $('copied').style.display = 'block'; setTimeout(function(){ $('copied').style.display='none'; }, 2500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(ok, function(){ prompt('Copiez ce lien :', url); });
+    else prompt('Copiez ce lien :', url);
+  });
+
+  // Bandeau « en direct »
+  var now = Date.now();
+  if (now >= new Date(CONFIG.DEBUT).getTime() - 10*60000 && now < new Date(CONFIG.FIN).getTime()) $('live').style.display = 'block';
+})();
+</script>
+</body>
+</html>
